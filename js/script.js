@@ -51,6 +51,9 @@ const zucchine = [
   },
 ]
 const output = document.querySelector('.output');
+const pesoPiccole = document.querySelector('.peso-piccole');
+const pesoGrandi = document.querySelector('.peso-grandi');
+
 let pesoTotale = 0;
 
 zucchine.forEach(zucchina => {
@@ -61,3 +64,30 @@ zucchine.forEach(zucchina => {
 });
 
 console.log('Peso totale', pesoTotale, 'grammi');
+
+const zucchineLunghe = [];
+const zucchinePiccole = [];
+let pesoTotaleGrandi = 0;
+let pesoTotalePiccole = 0;
+
+zucchine.forEach(zucchina => {
+  if (zucchina.lunghezza < 15 ) {
+    zucchinePiccole.push(zucchina);
+  } else {
+    zucchineLunghe.push (zucchina);
+  }
+})
+
+zucchineLunghe.forEach(zucchina => {
+  pesoTotaleGrandi += zucchina.peso;
+  pesoGrandi.innerHTML = `
+  Il peso totale delle zucchine lunghe è di ${parseInt(pesoTotaleGrandi)} gr.
+  `;
+});
+
+zucchinePiccole.forEach(zucchina => {
+  pesoTotalePiccole += zucchina.peso;
+  pesoPiccole.innerHTML = `
+  Il peso totale delle zucchine piccole è di ${parseInt(pesoTotalePiccole)} gr.
+  `;
+});
