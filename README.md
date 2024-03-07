@@ -12,3 +12,7 @@ Infine stampa separatamente quanto pesano i due gruppi di zucchine.
 1. Creo due array vuoti dove inserire le due tipologie di zucchine
 2. Creo un ciclo forEach e all'interno utilizzo un if per dividere quelle < e > di 15.
 3. Attraverso due cicli rifaccio come nel primo esercizio e stampo il peso totale delle zucchine grandi e piccole in HTML.
+### Jsnack 3
+Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (es. Ciao -> oaiC)
+1. creo la funzione che mi giri la parola con split reverse e join
+2. la provo tramite una const dandogli la funzione per eseguirla

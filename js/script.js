@@ -91,3 +91,17 @@ zucchinePiccole.forEach(zucchina => {
   Il peso totale delle zucchine piccole è di ${parseInt(pesoTotalePiccole)} gr.
   `;
 });
+
+const eman = reverseName('ciao');
+console.log(eman);
+
+
+
+
+
+
+// FUNCTION
+
+function reverseName(name) {
+  return name.split('').reverse().join('');
+}
