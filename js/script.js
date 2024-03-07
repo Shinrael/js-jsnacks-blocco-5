@@ -92,8 +92,12 @@ zucchinePiccole.forEach(zucchina => {
   `;
 });
 
+const reverseOutput = document.querySelector('.reverse');
 const eman = reverseName('ciao');
 console.log(eman);
+reverseOutput.innerHTML = `
+La parola al contrario è ${eman}.
+`;
 
 const numeri = [1,2,3,4,5];
 const lettere = ['a','b','c','d','e'];
@@ -103,7 +107,10 @@ for(let i = 0; i < numeri.length; i++){
   unicoArray.push(numeri[i]);
   unicoArray.push(lettere[i]);
 }
-console.log(unicoArray);
+const fusionArray = document.querySelector('.fusion-array');
+fusionArray.innerHTML = `
+Il mio array fuso è ${unicoArray}.
+`;
 
 
 
