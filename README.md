@@ -19,3 +19,7 @@ Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (
 ### Jsnack 4
 1. Creo i due array dove prendere alternativamente gli elementi e un'altro vuoto dove inserire questi elementi dopo.
 2. Creo un ciclo for dove al suo interno pusho gli index di numeri e lettere fino a quando non finiscono.
+### Jsnack 5
+1. Creo l'array di numeri e i const 'A' e 'B'
+2. Creo la funzione estrazione che mi pusha dentro l'array finale gli indici 'A' e 'B' dell'array di numeri.
+3. Utilizzo la funzione

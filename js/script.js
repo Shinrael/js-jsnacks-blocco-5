@@ -112,10 +112,32 @@ fusionArray.innerHTML = `
 Il mio array fuso è ${unicoArray}.
 `;
 
+const numeri2 = [1,2,3,4,5,6,7,8,9,10];
+const a = 3;
+const b = 6;
+const finalResult = document.querySelector('.final-result');
+const risultatoFinale = estrazione(numeri2, a, b);
+finalResult.innerHTML = `
+Il risultato finale dell'estrazione è ${risultatoFinale} !
+`
+
 
 
 // FUNCTION
 
 function reverseName(name) {
   return name.split('').reverse().join('');
+}
+
+function estrazione(array, a, b){
+  if(a < 0 || b>= array.length || a >= b){
+    return [];
+  }
+
+  const risultatoFinale = [];
+
+  for(let i = a; i <= b; i++){
+    risultatoFinale.push(array[i]);
+  }
+  return risultatoFinale;
 }
