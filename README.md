@@ -16,3 +16,6 @@ Infine stampa separatamente quanto pesano i due gruppi di zucchine.
 Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (es. Ciao -> oaiC)
 1. creo la funzione che mi giri la parola con split reverse e join
 2. la provo tramite una const dandogli la funzione per eseguirla
+### Jsnack 4
+1. Creo i due array dove prendere alternativamente gli elementi e un'altro vuoto dove inserire questi elementi dopo.
+2. Creo un ciclo for dove al suo interno pusho gli index di numeri e lettere fino a quando non finiscono.

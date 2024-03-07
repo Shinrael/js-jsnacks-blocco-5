@@ -95,8 +95,15 @@ zucchinePiccole.forEach(zucchina => {
 const eman = reverseName('ciao');
 console.log(eman);
 
+const numeri = [1,2,3,4,5];
+const lettere = ['a','b','c','d','e'];
+const unicoArray = [];
 
-
+for(let i = 0; i < numeri.length; i++){
+  unicoArray.push(numeri[i]);
+  unicoArray.push(lettere[i]);
+}
+console.log(unicoArray);
 
 
 
