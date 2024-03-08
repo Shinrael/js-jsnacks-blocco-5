@@ -73,24 +73,32 @@ let pesoTotalePiccole = 0;
 zucchine.forEach(zucchina => {
   if (zucchina.lunghezza < 15 ) {
     zucchinePiccole.push(zucchina);
+    pesoTotalePiccole += zucchina.peso;
+    pesoPiccole.innerHTML = `
+  Il peso totale delle zucchine piccole è di ${parseInt(pesoTotalePiccole)} gr.
+  `;
   } else {
     zucchineLunghe.push (zucchina);
-  }
-})
-
-zucchineLunghe.forEach(zucchina => {
-  pesoTotaleGrandi += zucchina.peso;
+    pesoTotaleGrandi += zucchina.peso;
   pesoGrandi.innerHTML = `
   Il peso totale delle zucchine lunghe è di ${parseInt(pesoTotaleGrandi)} gr.
   `;
-});
+  }
+})
 
-zucchinePiccole.forEach(zucchina => {
-  pesoTotalePiccole += zucchina.peso;
-  pesoPiccole.innerHTML = `
-  Il peso totale delle zucchine piccole è di ${parseInt(pesoTotalePiccole)} gr.
-  `;
-});
+// zucchineLunghe.forEach(zucchina => {
+//   pesoTotaleGrandi += zucchina.peso;
+//   pesoGrandi.innerHTML = `
+//   Il peso totale delle zucchine lunghe è di ${parseInt(pesoTotaleGrandi)} gr.
+//   `;
+// });
+
+// zucchinePiccole.forEach(zucchina => {
+//   pesoTotalePiccole += zucchina.peso;
+//   pesoPiccole.innerHTML = `
+//   Il peso totale delle zucchine piccole è di ${parseInt(pesoTotalePiccole)} gr.
+//   `;
+// });
 
 const reverseOutput = document.querySelector('.reverse');
 const eman = reverseName('ciao');
@@ -103,14 +111,18 @@ const numeri = [1,2,3,4,5];
 const lettere = ['a','b','c','d','e'];
 const unicoArray = [];
 
-for(let i = 0; i < numeri.length; i++){
-  unicoArray.push(numeri[i]);
-  unicoArray.push(lettere[i]);
+const maggioreLunghezza = numeri.length > lettere.length ? numeri.length : lettere.length;
+
+for(let i = 0; i < maggioreLunghezza; i++){
+  if(numeri[i])unicoArray.push(numeri[i]);
+  if(lettere[i])unicoArray.push(lettere[i]);
 }
+
 const fusionArray = document.querySelector('.fusion-array');
 fusionArray.innerHTML = `
 Il mio array fuso è ${unicoArray}.
 `;
+
 
 const numeri2 = [1,2,3,4,5,6,7,8,9,10];
 const a = 3;
