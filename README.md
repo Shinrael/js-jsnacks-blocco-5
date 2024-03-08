@@ -17,9 +17,13 @@ Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (
 1. creo la funzione che mi giri la parola con split reverse e join
 2. la provo tramite una const dandogli la funzione per eseguirla
 ### Jsnack 4
+Scrivi una funzione che fonda due array (aventi lo stesso numero di elementi) prendendo alternativamente gli elementi da uno e dall’altro
 1. Creo i due array dove prendere alternativamente gli elementi e un'altro vuoto dove inserire questi elementi dopo.
 2. Creo un ciclo for dove al suo interno pusho gli index di numeri e lettere fino a quando non finiscono.
 ### Jsnack 5
+Scrivi una funzione che accetti tre argomenti:
+un array e due numeri (“a” più piccolo di “b” e “b” grande al massimo quanto il numero di elementi dell’array).
+La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra “a” e “b”
 1. Creo l'array di numeri e i const 'A' e 'B'
 2. Creo la funzione estrazione che mi pusha dentro l'array finale gli indici 'A' e 'B' dell'array di numeri.
 3. Utilizzo la funzione
